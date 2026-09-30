@@ -315,9 +315,12 @@
     cursor: not-allowed;
   }
 
-  /* Coming soon showcase. The artwork carries its own L-brackets, so it
+  /* Wick's UI showcase. The artwork carries its own L-brackets, so it
      sits bare rather than inside card chrome. */
-  .showcase { display: block; width: 100%; height: auto; }
+  .showcase { display: block; width: 100%; height: auto; transition: transform 0.25s ease-out; }
+  .showcase-link { display: block; }
+  .showcase-link:hover .showcase { transform: translateY(-3px); }
+  .showcase-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 26px; }
 
   /* CTA strip ──────────────────────────────────────────────── */
   .cta {
@@ -404,13 +407,19 @@
 </section>
 
 <section class="container" id="suite">
-  <div class="section-label">Coming Soon</div>
+  <div class="section-label">New &middot; Wick's UI</div>
 
+  <a class="showcase-link" href="/ui/" aria-label="Wick's UI: take the tour">
   <img class="showcase" src="images/ui/looks.png"
        srcset="images/ui/looks.png 1200w, images/ui/looks-2x.png 2400w"
        sizes="(max-width: 1140px) calc(100vw - 56px), 1084px"
        width="1200" height="630"
        alt="Wick's UI: the same interface in eight looks, Wick Modern, Wick OG, Hologram, Rebel, Gilded, Arena, Foundry and Frost. Unit frames, nameplates, action bars, threat meter, window skins, chat, minimap, tooltips, buffs, info panels, XP and rep bars, profiles, move anything, full customization, and suite addons plug in.">
+  </a>
+  <div class="showcase-actions">
+    <a href="/ui/" class="btn primary">Take the tour &rarr;</a>
+    <a href="https://www.curseforge.com/wow/addons/wicks-ui" class="btn">CurseForge &rarr;</a>
+  </div>
 
   <div class="section-label">The Forever Suite</div>
 
@@ -430,6 +439,24 @@
         <div class="card-slash">/wickcore</div>
         <div class="card-actions"><a href="https://www.curseforge.com/wow/addons/wickcore" class="card-btn cf">CurseForge</a>
           <a href="https://github.com/Wicksmods/WickCore" class="card-btn">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="br tl"><div class="h"></div><div class="v"></div></div>
+      <div class="br tr"><div class="h"></div><div class="v"></div></div>
+      <div class="br bl"><div class="h"></div><div class="v"></div></div>
+      <div class="br br"><div class="h"></div><div class="v"></div></div>
+      <div class="new-badge">New</div>
+      <div class="card-thumb">
+        <img src="images/ui/page/look-modern.webp" alt="Wick's UI">
+      </div>
+      <div class="card-meta">
+        <div class="card-name"><span class="apo">Wick's</span> UI</div>
+        <div class="card-tagline">The whole interface, in one look. Action bars, unit frames, nameplates, chat, the minimap, a threat meter and the game's own windows. Eight looks to start from, full customization from there, and every part optional.</div>
+        <div class="card-slash">/wui</div>
+        <div class="card-actions"><a href="https://www.curseforge.com/wow/addons/wicks-ui" class="card-btn cf">CurseForge</a>
+          <a href="/ui/" class="card-btn">Tour</a></div>
       </div>
     </div>
 
@@ -566,7 +593,8 @@
         <div class="card-name"><span class="apo">Wick's</span> Poisons and Things</div>
         <div class="card-tagline">Rogue. What coats each blade and how long it has left, a coating key per hand, and combo points over the target&rsquo;s nameplate.</div>
         <div class="card-slash">/wpt</div>
-        <div class="card-actions"><a href="https://github.com/Wicksmods/WicksPoisonsAndThings" class="card-btn">GitHub</a></div>
+        <div class="card-actions"><a href="https://www.curseforge.com/wow/addons/wicks-poisons-and-things" class="card-btn cf">CurseForge</a>
+          <a href="https://github.com/Wicksmods/WicksPoisonsAndThings" class="card-btn">GitHub</a></div>
       </div>
     </div>
 
@@ -579,7 +607,8 @@
         <div class="card-name"><span class="apo">Wick's</span> Conjures and Things</div>
         <div class="card-tagline">Mage. Rations and reagents counted at a glance, with conjure keys bound to the best rank you know, food and water both.</div>
         <div class="card-slash">/wcj</div>
-        <div class="card-actions"><a href="https://github.com/Wicksmods/WicksConjuresAndThings" class="card-btn">GitHub</a></div>
+        <div class="card-actions"><a href="https://www.curseforge.com/wow/addons/wicks-conjures-and-things" class="card-btn cf">CurseForge</a>
+          <a href="https://github.com/Wicksmods/WicksConjuresAndThings" class="card-btn">GitHub</a></div>
       </div>
     </div>
 
