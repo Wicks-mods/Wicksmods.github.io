@@ -360,64 +360,6 @@
     .wordmark-sub { font-size: 18px; letter-spacing: 0.3em; }
   }
 </style>
-<style>
-  .beta-band {
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    background: var(--shadow);
-    padding: 34px 28px;
-    text-align: center;
-  }
-  .beta-band h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 22px;
-    letter-spacing: 0.04em;
-    margin-bottom: 10px;
-  }
-  .beta-band p {
-    color: var(--text-dim);
-    max-width: 660px;
-    margin: 0 auto 18px;
-    font-size: 15px;
-  }
-  .install-steps {
-    max-width: 660px;
-    margin: 0 auto 22px;
-    text-align: left;
-  }
-  .install-steps .step {
-    color: var(--text-dim);
-    font-size: 15px;
-    margin-bottom: 9px;
-    padding-left: 34px;
-    position: relative;
-  }
-  .install-steps .step-n {
-    position: absolute;
-    left: 0;
-    top: 1px;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    text-align: center;
-    border: 1px solid var(--border);
-    color: var(--fel);
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-  }
-  .install-steps code {
-    font-family: 'Space Mono', monospace;
-    font-size: 13px;
-    color: var(--text);
-  }
-  .beta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .beta-note {
-    color: var(--text-mute);
-    font-size: 13px;
-    max-width: 660px;
-    margin: 16px auto 0;
-  }
-</style>
 </head>
 <body>
 
@@ -445,7 +387,7 @@
     <em>A suite of precision addons.</em> One voice. One chrome. Rebuilt for Forever on a shared core, and written around the new addon rules rather than against them.
   </div>
   <div class="hero-actions">
-    <a href="/download/WicksMods-Forever-beta.zip" class="btn primary" download>Download the beta &darr;</a>
+    <a href="https://www.curseforge.com/members/wick/projects" class="btn primary">Get it on CurseForge &rarr;</a>
     <a href="#suite" class="btn">Browse the Suite</a>
     <a href="https://discord.gg/GWGTMhYBZY" class="btn">Discord &rarr;</a>
     <a href="https://github.com/Wicksmods" class="btn">GitHub &rarr;</a>
@@ -459,33 +401,6 @@
   <div class="stat-eyebrow">— Downloaded and in use —</div>
   <div class="stat-number" id="total-downloads" data-default="4647">4647</div>
   <div class="stat-label">Downloads <span class="accent">·</span> CurseForge</div>
-</section>
-
-<section class="beta-band">
-  <h2>Beta build, hosted on GitHub</h2>
-  <p>
-    Forever is still in beta, so the suite is too. One zip holds WickCore, the bags,
-    the comforts, the levelling gear browser, the trade hall and every class kit.
-    Drop the folders into
-    <code>_classic_beta_\Interface\AddOns</code> and they are ready.
-  </p>
-  <div class="install-steps">
-    <div class="step"><span class="step-n">1</span> Download the zip and close World of Warcraft.</div>
-    <div class="step"><span class="step-n">2</span> Open your game folder, then <code>_classic_beta_</code> &rsaquo; <code>Interface</code> &rsaquo; <code>AddOns</code>. Create the AddOns folder if it is not there.</div>
-    <div class="step"><span class="step-n">3</span> Copy every folder from inside the zip into AddOns, start the game, and tick them in the AddOns list.</div>
-  </div>
-  <div class="beta-actions">
-    <a href="/download/WicksMods-Forever-beta.zip" class="btn primary" download>Download the zip</a>
-    <a href="https://github.com/Wicksmods/WickSuite/releases/tag/forever-beta-2026-09-19" class="btn">Release notes &rarr;</a>
-  </div>
-  <div class="beta-note">
-    Settings are kept the normal way again. For most of the beta the client wrote every
-    addon's settings at logout and handed back nothing at load, so nothing you configured
-    survived a reload, and WickCore kept Wick settings in a handful of macros instead.
-    The patch on 24 September fixed the client. WickCore checks at every login and has
-    stood that workaround down by itself. If you had turned it on, it will say so once
-    at login and <code>/wickcore store off</code> gives you the macro slots back.
-  </div>
 </section>
 
 <section class="container" id="suite">
