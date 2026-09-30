@@ -1,4 +1,8 @@
 .git
+.gitignore
+.gitattributes
+.github
+.wrangler
 .assetsignore
 wrangler.jsonc
 deploy.sh
