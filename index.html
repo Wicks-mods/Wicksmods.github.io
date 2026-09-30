@@ -315,6 +315,10 @@
     cursor: not-allowed;
   }
 
+  /* Coming soon showcase. The artwork carries its own L-brackets, so it
+     sits bare rather than inside card chrome. */
+  .showcase { display: block; width: 100%; height: auto; }
+
   /* CTA strip ──────────────────────────────────────────────── */
   .cta {
     padding: 80px 28px;
@@ -485,6 +489,14 @@
 </section>
 
 <section class="container" id="suite">
+  <div class="section-label">Coming Soon</div>
+
+  <img class="showcase" src="images/ui/looks.png"
+       srcset="images/ui/looks.png 1200w, images/ui/looks-2x.png 2400w"
+       sizes="(max-width: 1140px) calc(100vw - 56px), 1084px"
+       width="1200" height="630"
+       alt="Wick's UI: the same interface in eight looks, Wick Modern, Wick OG, Hologram, Rebel, Gilded, Arena, Foundry and Frost. Unit frames, nameplates, action bars, threat meter, window skins, chat, minimap, tooltips, buffs, info panels, XP and rep bars, profiles, move anything, full customization, and suite addons plug in.">
+
   <div class="section-label">The Forever Suite</div>
 
   <div class="grid">
