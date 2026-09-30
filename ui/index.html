@@ -213,26 +213,6 @@
   }
   .beyond span { color: var(--fel); font-weight: 600; }
 
-  /* Stat band ─────────────────────────────────────────────── */
-  .stats {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-    margin-top: 90px;
-    background: radial-gradient(ellipse at 50% 50%, rgba(79,199,120,0.05) 0%, transparent 65%);
-  }
-  .stat { text-align: center; padding: 42px 16px 40px; }
-  .stat + .stat { border-left: 1px solid var(--border); }
-  .stat .n {
-    font-family: 'Cinzel', serif; font-weight: 900; font-size: 84px; line-height: 0.95;
-    color: #7568a3; text-shadow: 0 0 28px rgba(117,104,163,0.22), 0 0 64px rgba(56,48,88,0.18);
-  }
-  .stat .n.inf { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 104px; line-height: 0.76; }
-  .stat .l {
-    font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.34em;
-    text-transform: uppercase; color: var(--text-dim); margin-top: 14px;
-  }
-  .stat .l .accent { color: var(--fel); }
-
   /* Annotated screenshots ─────────────────────────────────── */
   .tour { display: grid; grid-template-columns: 1fr 340px; gap: 30px; align-items: start; }
   .tour.flip { grid-template-columns: 340px 1fr; }
@@ -401,9 +381,6 @@
     .tagline { font-size: 18px; }
     .caption { grid-template-columns: 1fr; gap: 10px; text-align: center; }
     .caption .blurb { border-left: 0; padding-left: 0; }
-    .stats { grid-template-columns: 1fr; }
-    .stat + .stat { border-left: 0; border-top: 1px solid var(--border); }
-    .stat .n { font-size: 64px; }
     .section-title { font-size: 27px; }
   }
   @media (max-width: 560px) {
@@ -480,14 +457,6 @@
       <div class="blurb" id="lookBlurb"></div>
     </div>
     <p class="beyond"><span>Eight to start from.</span> Then change the colours, the fonts, the bar textures, the sizes, what every line of text says and where everything sits. The look you end up with is yours.</p>
-  </div>
-</section>
-
-<section class="container">
-  <div class="stats reveal">
-    <div class="stat"><div class="n">8</div><div class="l">Looks <span class="accent">&middot;</span> to start from</div></div>
-    <div class="stat"><div class="n inf">&infin;</div><div class="l">Looks <span class="accent">&middot;</span> once you make it yours</div></div>
-    <div class="stat"><div class="n">1</div><div class="l">Reload <span class="accent">&middot;</span> to set it all up</div></div>
   </div>
 </section>
 
