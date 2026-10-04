@@ -6,17 +6,17 @@ Static landing page for the **Wick suite** — precision addons for World of War
 
 ## The suite
 
-- [Wick's TBC BIS Tracker](https://github.com/Wicksmods/WickidsTBCBISTracker) — best-in-slot gear tracker
-- [Wick's CD Tracker](https://github.com/Wicksmods/WicksCDTracker) — live cooldown tracker
-- [Wick's Trade Hall](https://github.com/Wicksmods/WicksTradeHall) — trade chat bulletin board
-- [Wick's Macro Builder](https://github.com/Wicksmods/WicksMacroBuilder) — chip-based macro editor
-- [Wick's Combat Log](https://github.com/Wicksmods/WicksCombatLog) — raw COMBAT_LOG_EVENT_UNFILTERED viewer
-- [Wick's Stats](https://github.com/Wicksmods/WicksStats) — detailed stat panel
-- [Wick's Quest Key](https://github.com/Wicksmods/WicksQuestKey) — one bind for active quest items
-- [Wick's Totems and Things](https://github.com/Wicksmods/WicksTotemsAndThings) — shaman totem twist + proc tracker
+- [Wick's TBC BIS Tracker](https://github.com/Wicks-mods/WickidsTBCBISTracker) — best-in-slot gear tracker
+- [Wick's CD Tracker](https://github.com/Wicks-mods/WicksCDTracker) — live cooldown tracker
+- [Wick's Trade Hall](https://github.com/Wicks-mods/WicksTradeHall) — trade chat bulletin board
+- [Wick's Macro Builder](https://github.com/Wicks-mods/WicksMacroBuilder) — chip-based macro editor
+- [Wick's Combat Log](https://github.com/Wicks-mods/WicksCombatLog) — raw COMBAT_LOG_EVENT_UNFILTERED viewer
+- [Wick's Stats](https://github.com/Wicks-mods/WicksStats) — detailed stat panel
+- [Wick's Quest Key](https://github.com/Wicks-mods/WicksQuestKey) — one bind for active quest items
+- [Wick's Totems and Things](https://github.com/Wicks-mods/WicksTotemsAndThings) — shaman totem twist + proc tracker
 
-Brand assets and the design system live in [WickSuite](https://github.com/Wicksmods/WickSuite).
+Brand assets and the design system live in [WickSuite](https://github.com/Wicks-mods/WickSuite).
 
 ## License
 
-MIT for the site code. Brand assets are trademarked — see [TRADEMARK.md](https://github.com/Wicksmods/WickSuite/blob/main/TRADEMARK.md).
+MIT for the site code. Brand assets are trademarked — see [TRADEMARK.md](https://github.com/Wicks-mods/WickSuite/blob/main/TRADEMARK.md).
