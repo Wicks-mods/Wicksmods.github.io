@@ -12,17 +12,17 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wick's UI: the whole interface, in one look">
-<meta property="og:description" content="A full interface for WoW Forever. Nine looks to start from, full customization from there, and every part optional.">
+<meta property="og:description" content="A full interface for WoW Forever. Ten looks to start from, Classic among them, full customization from there, and every part optional.">
 <meta property="og:image" content="https://wicksmods.com/images/ui/social-2x.png">
 <meta property="og:image:width" content="2400">
 <meta property="og:image:height" content="1260">
-<meta property="og:image:alt" content="Wick's UI: the whole interface, in one look. Wick Modern, Rebel, Hologram and Gilded shown; nine looks, or your own.">
+<meta property="og:image:alt" content="Wick's UI: the whole interface, in one look. Wick Modern, Classic, Rebel and Hologram shown; ten looks, or your own.">
 <meta property="og:url" content="https://wicksmods.com/ui/">
 <meta property="og:site_name" content="Wick's Mods">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@wicksmods">
 <meta name="twitter:title" content="Wick's UI: the whole interface, in one look">
-<meta name="twitter:description" content="A full interface for WoW Forever. Nine looks to start from, full customization from there.">
+<meta name="twitter:description" content="A full interface for WoW Forever. Ten looks to start from, full customization from there.">
 <meta name="twitter:image" content="https://wicksmods.com/images/ui/social-2x.png">
 <meta name="theme-color" content="#0D0A14">
 
@@ -182,7 +182,7 @@
   }
   .stage-wrap { position: relative; }
   .chips {
-    display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; margin-top: 26px;
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 26px;
   }
   .chip {
     position: relative; overflow: hidden;
@@ -370,7 +370,6 @@
     .bento { grid-template-columns: repeat(2, 1fr); }
     .tile, .tile.w3, .tile.w4 { grid-column: span 1; }
     .tile.w4 { grid-column: span 2; }
-    .chips { grid-template-columns: repeat(3, 1fr); }
     .steps { grid-template-columns: repeat(3, 1fr); row-gap: 28px; }
     .steps .rail { display: none; }
     .rules { grid-template-columns: 1fr; }
@@ -387,7 +386,7 @@
     .container, .hero, .topbar { padding-left: 16px; padding-right: 16px; }
     .wordmark { font-size: 60px; }
     .wordmark-sub { font-size: 18px; letter-spacing: 0.3em; }
-    .chips { grid-template-columns: repeat(3, 1fr); }
+    .chips { grid-template-columns: repeat(2, 1fr); }
     .chip { font-size: 15px; }
     .bento { grid-template-columns: 1fr; }
     .tile.w4 { grid-column: span 1; }
@@ -456,7 +455,7 @@
       <div class="name" id="lookName">Wick Modern</div>
       <div class="blurb" id="lookBlurb"></div>
     </div>
-    <p class="beyond"><span>Nine to start from.</span> Then change the colours, the fonts, the bar textures, the sizes, what every line of text says and where everything sits. The look you end up with is yours.</p>
+    <p class="beyond"><span>Ten to start from.</span> Then change the colours, the fonts, the bar textures, the sizes, what every line of text says and where everything sits. The look you end up with is yours.</p>
   </div>
 </section>
 
@@ -660,7 +659,7 @@
 
   <div class="steps" id="steps">
     <div class="rail"><i></i></div>
-    <div class="step" style="--i:0"><div class="dot">01</div><b>Pick a look</b><span>Any of the nine to start from. Change anything after.</span></div>
+    <div class="step" style="--i:0"><div class="dot">01</div><b>Pick a look</b><span>Any of the ten to start from. Change anything after.</span></div>
     <div class="step" style="--i:1"><div class="dot">02</div><b>Class colours</b><span>The game's own, or the Classic era set.</span></div>
     <div class="step" style="--i:2"><div class="dot">03</div><b>Scale</b><span>Pixel perfect, or the game's own.</span></div>
     <div class="step" style="--i:3"><div class="dot">04</div><b>Your bags</b><span>With Wick's Bags on, which bags B opens.</span></div>
@@ -760,6 +759,8 @@
       blurb: 'Rounded glass on a soft shadow, the Wick font, no border lines. <b>The default.</b>' },
     { id: 'og',       name: 'Wick OG',     color: '#4FC778', font: "'Cinzel', serif",
       blurb: 'The original: flat panels, a single-pixel border, fel corners.' },
+    { id: 'classic',  name: 'Classic',     color: '#FFD100', font: "'Cinzel', serif", upper: true,
+      blurb: "The classic look you love, drawn in the game's own art: its windows, buttons, bags, unit frames and nameplates. <b>Everything Wick's UI does still runs underneath.</b>" },
     { id: 'hologram', name: 'Hologram',    color: '#3FE0FF', font: "'Jost', sans-serif", upper: true,
       blurb: 'A projected display: faint glass, cut corners, a cyan outline and glow, clean geometric type with capital headings.' },
     { id: 'rebel',    name: 'Rebel',       color: '#E5091A', font: "'Anton', sans-serif", upper: true,
