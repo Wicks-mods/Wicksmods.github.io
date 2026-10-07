@@ -38,10 +38,12 @@ jobs:
           #          1538543 Travel Form, 1540943 Wardrobe, 1542398 Ledger,
           #          1557237 Survivors
           # Forever: 1708157 WickCore, 1708161 Comforts, 1708162 Beasts,
-          #          1708165 Stances, 1708290 Gear
-          # Both:    1502890 Trade Hall, 1537836 Bags serve two clients from
-          #          one project each, so they are counted once.
-          for ID in 1502804 1519243 1502890 1521208 1525232 1532082 1533199 1535194 1537836 1538543 1540943 1542398 1557237 1708157 1708161 1708162 1708165 1708290; do
+          #          1708165 Stances, 1708290 Gear, 1713442 Poisons,
+          #          1723662 Seals
+          # Both:    1502890 Trade Hall, 1537836 Bags, 1719340 Wick's UI,
+          #          1724608 Demons, 1730807 Reminders serve two clients
+          #          from one project each, so they are counted once.
+          for ID in 1502804 1519243 1502890 1521208 1525232 1532082 1533199 1535194 1537836 1538543 1540943 1542398 1557237 1708157 1708161 1708162 1708165 1708290 1713442 1719340 1723662 1724608 1730807; do
             BODY=$(curl -sf \
               -H "x-api-key: $CF_CORE_API_KEY" \
               -A "Wicksmods landing-page stat refresher (https://github.com/wicksmods/wicksmods.github.io)" \
@@ -107,6 +109,11 @@ jobs:
             wicks-stances-and-things
             wicks-gear
             wicks-conjures-and-things
+            wicks-poisons-and-things
+            wicks-ui
+            wicks-seals-and-things
+            wicks-demons-and-things
+            wicks-reminders
           )
 
           NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)

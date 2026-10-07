@@ -535,6 +535,26 @@
       <div class="br tr"><div class="h"></div><div class="v"></div></div>
       <div class="br bl"><div class="h"></div><div class="v"></div></div>
       <div class="br br"><div class="h"></div><div class="v"></div></div>
+      <div class="new-badge">New</div>
+      <div class="card-thumb">
+        <img src="images/reminders/thumb.png" alt="Wick's Reminders">
+      </div>
+      <div class="card-meta">
+        <div class="card-name"><span class="apo">Wick's</span> Reminders</div>
+        <div class="card-tagline">Timers, alarms and event reminders that keep counting between sessions, with Snooze and Done on every alert. TBC Classic Anniversary and Forever.</div>
+        <div class="card-slash">/remind</div>
+        <div class="card-actions">
+          <a href="https://www.curseforge.com/wow/addons/wicks-reminders" class="card-btn cf">CurseForge</a>
+          <a href="https://github.com/Wicks-mods/WicksReminders" class="card-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="br tl"><div class="h"></div><div class="v"></div></div>
+      <div class="br tr"><div class="h"></div><div class="v"></div></div>
+      <div class="br bl"><div class="h"></div><div class="v"></div></div>
+      <div class="br br"><div class="h"></div><div class="v"></div></div>
       <div class="card-meta">
         <div class="card-name"><span class="apo">Wick's</span> Totems and Things</div>
         <div class="card-tagline">Shaman. Totem presets, a secure cast bar, Call of the Elements sync and imbues.</div>
@@ -634,6 +654,25 @@
       <div class="br bl"><div class="h"></div><div class="v"></div></div>
       <div class="br br"><div class="h"></div><div class="v"></div></div>
       <div class="card-thumb">
+        <img src="images/seals/thumb.png" alt="Wick's Seals and Things">
+      </div>
+      <div class="card-meta">
+        <div class="card-name"><span class="apo">Wick's</span> Seals and Things</div>
+        <div class="card-tagline">Paladin. One seal key that cycles the Crusader and your fighting seal, a blessing key that goes to a friend first, and two-hander or sword-and-board on a key.</div>
+        <div class="card-slash">/wsl</div>
+        <div class="card-actions">
+          <a href="https://www.curseforge.com/wow/addons/wicks-seals-and-things" class="card-btn cf">CurseForge</a>
+          <a href="https://github.com/Wicks-mods/WicksSealsAndThings" class="card-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="br tl"><div class="h"></div><div class="v"></div></div>
+      <div class="br tr"><div class="h"></div><div class="v"></div></div>
+      <div class="br bl"><div class="h"></div><div class="v"></div></div>
+      <div class="br br"><div class="h"></div><div class="v"></div></div>
+      <div class="card-thumb">
         <img src="images/survivors/thumb.png" alt="Wick's Survivors">
       </div>
       <div class="card-meta">
@@ -681,6 +720,37 @@
       }
     })
     .catch(() => { /* keep seed */ });
+})();
+</script>
+
+
+<!-- Approval status: the GH Action HEADs each addon's CF slug every 6 hours -->
+<!-- and writes data/addons-status.json. Pending = the public slug 404s while -->
+<!-- CurseForge reviews a fresh upload. Cards in "pending" state get an amber  -->
+<!-- "Pending approval" badge and a disabled CF button. -->
+<script>
+(() => {
+  fetch('/data/addons-status.json?_=' + Date.now(), { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : null)
+    .then(d => {
+      if (!d || !d.status) return;
+      const cards = document.querySelectorAll('#suite .card');
+      cards.forEach(card => {
+        const cf = card.querySelector('.card-btn.cf');
+        if (!cf) return;
+        const m = cf.getAttribute('href').match(/\/wow\/addons\/([^/?#]+)/);
+        if (!m) return;
+        const state = d.status[m[1]];
+        if (state !== 'pending') return;
+        card.classList.add('is-pending');
+        const badge = card.querySelector('.new-badge');
+        if (badge) {
+          badge.classList.add('pending');
+          badge.textContent = 'Pending approval';
+        }
+      });
+    })
+    .catch(() => { /* keep static badges */ });
 })();
 </script>
 
