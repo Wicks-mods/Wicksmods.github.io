@@ -1,0 +1,64 @@
+/* Wickidspliff pages: red skull-and-flame palette (not the Wick's Mods one) */
+:root {
+  --flame:    #F3381E;
+  --ink:      #0F0F10;
+  --panel:    #1A1B1C;
+  --border:   #33302F;
+  --bone:     #E4E7E7;
+  --dim:      #A3A6A6;
+  --mute:     #5E6060;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--ink); color: var(--bone); }
+body { font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.65; min-height: 100vh; }
+a { color: var(--flame); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+nav {
+  max-width: 760px; margin: 0 auto; padding: 22px 24px 0;
+  display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+}
+nav a { color: var(--dim); }
+nav a:hover, nav a[aria-current] { color: var(--flame); text-decoration: none; }
+nav .home { margin-right: auto; color: var(--bone); }
+
+header {
+  padding: 48px 24px 24px; text-align: center;
+  background: radial-gradient(ellipse at 50% 0%, rgba(243,56,30,0.14) 0%, transparent 62%);
+}
+header img { width: 128px; height: auto; display: block; margin: 0 auto 18px; }
+h1 { font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; font-size: 60px; line-height: 1; letter-spacing: 0.02em; }
+.sub { margin-top: 10px; color: var(--dim); font-size: 14px; }
+
+main { max-width: 760px; margin: 0 auto; padding: 16px 24px 64px; }
+.lead { font-size: 19px; color: var(--dim); margin-bottom: 34px; }
+.lead b { color: var(--bone); font-weight: 600; }
+section { padding: 20px 0 20px 20px; border-left: 2px solid var(--border); position: relative; }
+section::before { content: ''; position: absolute; left: -2px; top: 22px; width: 2px; height: 22px; background: var(--flame); }
+h2 { font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.03em; line-height: 1.2; margin-bottom: 6px; }
+p, li { color: var(--dim); }
+p + p, p + ul, ul + p { margin-top: 10px; }
+ul { padding-left: 20px; }
+li + li { margin-top: 4px; }
+b { color: var(--bone); font-weight: 600; }
+
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.links a {
+  border: 1px solid var(--border); background: var(--panel); color: var(--bone);
+  padding: 8px 14px; border-radius: 6px; font-size: 14px; font-weight: 600;
+}
+.links a:hover { border-color: var(--flame); text-decoration: none; }
+
+footer {
+  border-top: 1px solid var(--border); padding: 32px 24px 44px; text-align: center;
+  font-size: 12px; color: var(--mute); letter-spacing: 0.06em;
+}
+footer a { color: var(--dim); }
+footer .row + .row { margin-top: 6px; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 46px; }
+  .lead { font-size: 17px; }
+}
