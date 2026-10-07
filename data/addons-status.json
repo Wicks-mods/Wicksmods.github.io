@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T18:09:00Z",
+  "updated": "2026-10-07T18:38:05Z",
   "status": {
     "wicks-tbc-bis-tracker": "live",
     "wicks-cd-tracker": "live",
@@ -19,6 +19,11 @@
     "wicks-beasts-and-things": "live",
     "wicks-stances-and-things": "live",
     "wicks-gear": "live",
-    "wicks-conjures-and-things": "pending"
+    "wicks-conjures-and-things": "pending",
+    "wicks-poisons-and-things": "live",
+    "wicks-ui": "live",
+    "wicks-seals-and-things": "live",
+    "wicks-demons-and-things": "live",
+    "wicks-reminders": "pending"
   }
 }
